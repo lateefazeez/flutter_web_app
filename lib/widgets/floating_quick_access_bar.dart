@@ -41,11 +41,12 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
           items[i],
           style: TextStyle(
             color: _isHovering[i] ? Colors.blueGrey[900] : Colors.blueGrey,
+            fontSize: 20,
           ),
         ),
       );
       Widget spacer = SizedBox(
-        height: widget.screenSize.height / 20,
+        height: widget.screenSize.height / 30,
         child: VerticalDivider(
           width: 1,
           color: Colors.blueGrey[100],
@@ -67,7 +68,7 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
       heightFactor: 1,
       child: Padding(
         padding: EdgeInsets.only(
-          top: widget.screenSize.height * 0.60,
+          top: widget.screenSize.height * 0.61,
           left: ResponsiveWidget.isSmallScreen(context)
               ? widget.screenSize.width / 12
               : widget.screenSize.width / 5,
@@ -79,8 +80,8 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
           elevation: 5,
           child: Padding(
             padding: EdgeInsets.only(
-              top: widget.screenSize.height/70,
-              bottom: widget.screenSize.height/70,
+              top: widget.screenSize.height/80,
+              bottom: widget.screenSize.height/80,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
