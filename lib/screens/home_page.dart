@@ -46,6 +46,7 @@ class _HomePageState extends State<HomePage> {
         child: TopBarContents(_opacity),
       ),
       body: SingleChildScrollView(
+        controller: _scrollController,
         child: Column(
             children: [
               Stack(
