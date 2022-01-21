@@ -9,6 +9,8 @@ import 'package:web_app/widgets/top_bar_contents.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -38,6 +40,11 @@ class _HomePageState extends State<HomePage> {
         : 1;
 
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: PreferredSize(
+        preferredSize: Size(screenSize.width, 70),
+        child: TopBarContents(_opacity),
+      ),
       body: Column(
           children: [
             Stack(
@@ -52,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-
+                FloatingQuickAccessBar(screenSize: screenSize)
               ],
             ),
 
