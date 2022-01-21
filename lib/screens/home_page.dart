@@ -65,6 +65,8 @@ class _HomePageState extends State<HomePage> {
                       FloatingQuickAccessBar(screenSize: screenSize),
                       FeaturedHeading(screenSize: screenSize),
                       FeaturedTiles(screenSize: screenSize),
+                      MainHeading(screenSize: screenSize),
+                      MainCarousel(),
                     ],
                   )
 

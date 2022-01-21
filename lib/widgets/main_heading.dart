@@ -21,6 +21,7 @@ class MainHeading extends StatelessWidget {
               'Knowledge diversity',
               textAlign: TextAlign.center,
               style: TextStyle(
+                color: Color(0xFF077bd7),
                 fontSize: 40,
                 fontFamily: 'Montserrat',
                 fontWeight: FontWeight.bold,
