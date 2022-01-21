@@ -82,6 +82,7 @@ class FeaturedTiles extends StatelessWidget {
                   (int pageIndex) => Row(
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
                             height: screenSize.width / 2.5,

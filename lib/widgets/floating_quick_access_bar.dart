@@ -92,7 +92,10 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
                   ),
                   child: Row(
                     children: [
-                      Icon(icons[i]),
+                      Icon(
+                          icons[i],
+                          color: Colors.blueGrey,
+                      ),
                       SizedBox(width: widget.screenSize.width / 50,),
                       InkWell(
                         splashColor: Colors.transparent,

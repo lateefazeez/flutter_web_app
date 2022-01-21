@@ -92,7 +92,7 @@ class _MainCarouselState extends State<MainCarousel> {
             ),
           ),
         ),
-         AspectRatio(
+        screenSize.width < 800 ?  Container() :  AspectRatio(
                 aspectRatio: 17 / 8,
                 child: Center(
                   heightFactor: 1,
