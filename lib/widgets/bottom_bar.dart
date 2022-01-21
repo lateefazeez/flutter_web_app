@@ -14,18 +14,6 @@ class BottomBar extends StatelessWidget {
     return Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(0.0)),
-          boxShadow: <BoxShadow>[
-            BoxShadow(
-              color: gradientStartColor,
-              offset: Offset(1.0, 6.0),
-              blurRadius: 1.0,
-            ),
-            BoxShadow(
-              color: gradientEndColor,
-              offset: Offset(1.0, 6.0),
-              blurRadius: 1.0,
-            ),
-          ],
           gradient: LinearGradient(
               colors: [
                 gradientStartColor,
@@ -50,6 +38,18 @@ class BottomBar extends StatelessWidget {
                       s2: 'About Us',
                       s3: 'Careers',
                     ),
+                    BottomBarColumn(
+                      heading: 'HELP',
+                      s1: 'Payment',
+                      s2: 'Cancellation',
+                      s3: 'FAQ',
+                    ),
+                    BottomBarColumn(
+                      heading: 'SOCIAL',
+                      s1: 'Twitter',
+                      s2: 'Facebook',
+                      s3: 'YouTube',
+                    ),
                     Container(
                       color: Colors.white,
                       width: 2,
@@ -60,12 +60,12 @@ class BottomBar extends StatelessWidget {
                       children: [
                         InfoText(
                           type: 'Email',
-                          text: 'dylan@gmail.com',
+                          text: 'codelate18@gmail.com',
                         ),
                         SizedBox(height: 5),
                         InfoText(
                           type: 'Address',
-                          text: '128, Trymore Road, Delft, MN - 56124',
+                          text: '1729, Cornerstone Blvd, Calgary, NE - T3N 1S4',
                         )
                       ],
                     ),
@@ -76,7 +76,7 @@ class BottomBar extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'Copyright © 2021 | DBestech',
+                  'Copyright © 2022 | Codelate',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 14,

@@ -41,7 +41,6 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
           items[i],
           style: TextStyle(
             color: _isHovering[i] ? Colors.blueGrey[900] : Colors.blueGrey,
-            fontSize: 20,
           ),
         ),
       );
