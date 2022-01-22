@@ -26,7 +26,66 @@ class BottomBar extends StatelessWidget {
         ),
       padding: EdgeInsets.all(30),
       //color: Colors.blueGrey[900],
-      child: Column(
+      child:
+      MediaQuery.of(context).size.width < 800 ?
+          Column(
+            children: [
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  BottomBarColumn(
+                    heading: 'ABOUT',
+                    s1: 'Contact Us',
+                    s2: 'About Us',
+                    s3: 'Careers',
+                  ),
+                  BottomBarColumn(
+                    heading: 'HELP',
+                    s1: 'Payment',
+                    s2: 'Cancellation',
+                    s3: 'FAQ',
+                  ),
+                  BottomBarColumn(
+                    heading: 'SOCIAL',
+                    s1: 'Twitter',
+                    s2: 'Facebook',
+                    s3: 'YouTube',
+                  ),
+                ],
+              ),
+              Divider(
+                color: Colors.white60,
+              ),
+              SizedBox(height: 20),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  InfoText(
+                    type: 'Email',
+                    text: 'codelate18@gmail.com',
+                  ),
+                  SizedBox(height: 5),
+                  InfoText(
+                    type: 'Address',
+                    text: '1729, Cornerstone Blvd, Calgary, NE - T3N 1S4',
+                  ),
+                  Divider(
+                    color: Colors.white,
+                  ),
+                  SizedBox(height: 20),
+                  Text(
+                    'Copyright © 2022 | Codelate',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ) :
+          Column(
               children: [
                 Row(
                   mainAxisSize: MainAxisSize.max,
